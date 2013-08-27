@@ -1,0 +1,36 @@
+<resources>
+
+    <string name="app_name">inGenius</string>
+    
+    <string name="title_activity_main">inGenius</string>
+    <string name="rulestext">1) It will be a 12 hour event that will consist of 10 hours dedicated for developing your hacks.
+\n\n2) Each team must consist of at least 2 members and at most 3 members.
+\n\n3) The total number of participants will be limited to 100. Hence, a first come first serve policy will be followed in the registration process. Please do note that registration will be done only if the team registers together.
+\n\n4) The registration fee will be Rs.100 per person(Rs.200 for a team of 2 and Rs.300 for a team of 3)
+\n\n5) The tickets are non refundable.
+\n\n6) Food and refreshments will be provided on the day of the event.
+\n\n7) Each team must get their own laptops and other hardware required to develop their hacks.
+\n\n8) Access to power and wifi for all the participants will be ensured
+\n\n9) Repository for software will be made available on the local network
+\n\n10) You must bring a valid ID for verification purposes.
+\n\n11) All your belongings are your sole responsibility. The organizer is not responsible for stolen / missing goods of any participant.
+\n\n12) Hacks to be submitted have no domain restrictions and can be either hardware or software hacks or a combination of both
+\n\n13) Teams may work on multiple hacks,but, can submit only one for reviewing to the judges.
+\n\n14) You shall not submit any hack
+
+    that is known by you to belong to someone else.
+    that has already been worked on, either by you or by someone else; all hacks must be initiated and must end within the duration of the hackathon.
+    that contains viruses, worms, spyware or other components or instructions that are malicious, deceptive, or designed to limit or harm the functionality of a computer.
+    that violates third party copyrights, patents, trademarks, trade secrets or other proprietary rights or rights of publicity or privacy.
+    that violates any law, statute, ordinance or regulation.
+    that is, or may reasonably be considered to be, defamatory, libelous, hateful, racially or religiously biased or offensive, unlawfully threatening or unlawfully harassing to any individual, partnership or corporation.
+
+\n\n15) You will not hold the organizer or the event sponsors liable for any content you submit for purposes of this competition.
+\n\n16) We may, on notifying you, immediately suspend or terminate your rights, if you breach these rules or if we reasonably believe that you have submitted a contribution in violation of these rules.
+\n\n17) The organizer reserves the right, in sole discretion, to suspend or cancel the contest at any time for any reason.
+\n\n18) The jury reserves the right to go through the entire source code of your submitted hack and you guarantee that no part of it violates any aforementioned intellectual properties.
+\n\n19) We may refuse your hack for any good reason.
+\n\n20) The final winner will be decided based on the jury’s decision and organizer’s evaluation.
+\n\n21) Organizer’s decision will be final and binding.</string>
+
+</resources>

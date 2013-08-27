@@ -1,0 +1,120 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="4dp"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/countdown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Countdown loading..."
+            android:textColor="#ffffff"
+            android:textSize="57dp"
+            android:background="@drawable/button_bg3" />
+
+        <LinearLayout
+            android:id="@+id/tile_row1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/countdown"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/tile_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#00ffffff"
+                android:scaleType="fitXY"
+                android:src="@drawable/hacker_profile2" >
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/tile_projects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#00ffffff"
+                android:scaleType="fitXY"
+                android:src="@drawable/projects" >
+            </ImageButton>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tile_row2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tile_row1"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/tile_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#00ffffff"
+                android:scaleType="fitXY"
+                android:src="@drawable/hackers" >
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/tile_faq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#00ffffff"
+                android:scaleType="fitXY"
+                android:src="@drawable/rules" >
+            </ImageButton>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tile_row3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tile_row2"
+            android:orientation="horizontal" >
+
+           <ImageButton
+                android:id="@+id/tile_photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#00ffffff"
+                android:scaleType="fitXY"
+                android:src="@drawable/photos" >
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/tile_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#00ffffff"
+                android:scaleType="fitXY"
+                android:src="@drawable/about" >
+            </ImageButton>
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</ScrollView>

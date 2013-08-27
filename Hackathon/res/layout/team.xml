@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <Button 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/createteam"
+               android:maxHeight="50dp"
+        android:scaleType="fitXY"
+                android:textStyle="bold" 
+                android:textSize="20dp"
+                android:text="Create a team"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:textColor="#ffffff"
+                />
+            <Button 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jointeam"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+        android:scaleType="fitXY"
+               android:textStyle="bold"
+                android:layout_below="@+id/createteam"
+                android:text="Join an existing team"
+                android:background="@null"
+                android:textColor="#b6b4fe"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/jointeam"
+                android:text="Note: Once you join a hack team, you cannot change your team. Please synchronize with your teammates and create ONE common team."
+            />
+            </RelativeLayout>
+            
+            </ScrollView>

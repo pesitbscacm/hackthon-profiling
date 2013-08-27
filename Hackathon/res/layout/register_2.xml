@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        
+        <ImageButton
+            android:id="@+id/profile_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:background="#000000"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"
+            android:padding="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/iphoto_icon" />
+
+        <TextView
+            android:id="@+id/person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profile_photo"
+            android:text="Karan Rajpal"
+            android:textColor="#ffffff"
+            
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ticket_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/person_name"
+            android:layout_toRightOf="@id/profile_photo"
+            android:text="Ticket Id : "
+            android:layout_marginTop="7dp"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ticket_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/person_name"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/ticket_number"
+            android:text="qqqqwwww44"
+            android:textColor="#eeeeee"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/team_of_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ticket_number"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/profile_photo"
+            android:text="Team : "
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ticket_number"
+            android:layout_toRightOf="@id/team_of_text"
+            android:layout_marginTop="7dp"
+            android:text="Gryffindor"
+            android:textColor="#eeeeee"
+            android:textSize="16dp" />
+
+        <View
+            android:id="@+id/line_break"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/profile_photo"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:id="@+id/class_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_break"
+            android:layout_margin="5dp"
+            android:text="Class/Section"
+            android:textColor="#b6b4fe"
+            android:textSize="19dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/deptspinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/class_text" />
+
+        <Spinner
+            android:id="@+id/semspinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/class_text"
+            android:layout_toRightOf="@+id/deptspinner" />
+
+        <Spinner
+            android:id="@+id/secspinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/class_text"
+            android:layout_toRightOf="@+id/semspinner" />
+
+        <TextView
+            android:id="@+id/food_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deptspinner"
+            android:layout_marginTop="6dp"
+            android:text="What food do you want?"
+            android:textColor="#b6b4fe"
+            android:textSize="19dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/food_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/food_text"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/veg_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Veg: "
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <RadioButton
+                android:id="@+id/veg_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/nonveg_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Non-Veg: "
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <RadioButton
+                android:id="@+id/nonveg_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/tshirt_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/food_radiogroup" >
+
+            <TextView
+                android:id="@+id/tshirt_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you want a Tshirt?"
+                android:textColor="#b6b4fe"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/tshirt_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tshirt_text"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="Yes "
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <RadioButton
+                    android:id="@+id/tshirt_yes_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="No "
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <RadioButton
+                    android:id="@+id/tshirt_no_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:checked="true" />
+            </RadioGroup>
+<!--   -->
+
+            <TextView
+                android:id="@+id/tshirtsize_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tshirt_radiogroup"
+                android:text="If yes,which size?"
+                android:textColor="#b6b4fe"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/tshirtsize_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tshirtsize_text"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="Small"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <RadioButton
+                    android:id="@+id/tshirt_small_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Medium"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <RadioButton
+                    android:id="@+id/tshirt_medium_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Large"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <RadioButton
+                    android:id="@+id/tshirt_large_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:checked="true" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/desctext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tshirtsize_radiogroup"
+                android:layout_margin="2dp"
+                android:text="Enter a description about yourself:"
+                android:textColor="#b6b4fe"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/descedittext"
+                android:layout_width="fill_parent"
+                android:layout_height="140dp"
+                android:layout_below="@+id/desctext"
+                android:gravity="top" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descedittext"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_bg3"
+                android:text="SUBMIT"
+                android:textColor="#ffffff" />
+            <!--
+          <TextView
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hacktext"
+                android:text="Hack Team:"
+                 android:textColor="#b6b4fe"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                  android:layout_margin="2dp"
+                android:layout_below="@+id/descedittext"/>
+          <Button 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/createteam"
+                android:layout_below="@+id/hacktext"
+                android:text="Create a team"
+                android:background="@null"
+                android:textColor="#ffffff"
+                />
+            <Button 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jointeam"
+                android:layout_below="@+id/createteam"
+                android:text="Join an existing team"
+                android:background="@null"
+                android:textColor="#ffffff"
+                />
+            -->
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

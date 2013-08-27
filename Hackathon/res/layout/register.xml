@@ -1,0 +1,215 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/textontop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="7dp"
+            android:text="Register"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tickettext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textontop"
+            android:layout_margin="5dp"
+            android:text="TicketId"
+            android:textColor="#b6b4fe"
+            android:textSize="25dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/ticketinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tickettext"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="15dp"
+            android:text="Scan the QR code on your ticket"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <ImageButton
+            android:id="@+id/scanbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tickettext"
+            android:layout_marginRight="7dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:clickable="true"
+            android:maxWidth="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/qr2" />
+
+        <TextView
+            android:id="@+id/ticketinfo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scanbutton"
+            android:layout_margin="3dp"
+            android:text="Or enter it manually"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/ticketid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ticketinfo2"
+            android:layout_margin="3dp"
+            android:background="@drawable/box_background"
+            android:imeOptions="actionNext"
+            android:paddingLeft="3dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ticketid"
+            android:layout_margin="3dp"
+            android:text="Name "
+            android:textColor="#b6b4fe"
+            android:textSize="25dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nametext"
+            android:layout_margin="3dp"
+            android:background="@drawable/box_background"
+            android:imeOptions="actionNext"
+            android:paddingLeft="3dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/emailtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_margin="5dp"
+            android:text="Email "
+            android:textColor="#b6b4fe"
+            android:textSize="25dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailtext"
+            android:layout_margin="3dp"
+            android:background="@drawable/box_background"
+            android:imeOptions="actionNext"
+            android:paddingLeft="3dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/confirmemailtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_margin="5dp"
+            android:text="Confirm Email "
+            android:textColor="#b6b4fe"
+            android:textSize="25dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/confirmemail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirmemailtext"
+            android:layout_margin="3dp"
+            android:background="@drawable/box_background"
+            android:imeOptions="actionNext"
+            android:paddingLeft="3dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/passtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirmemail"
+            android:layout_margin="3dp"
+            android:text="Password "
+            android:textColor="#b6b4fe"
+            android:textSize="25dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passtext"
+            android:layout_margin="3dp"
+            android:background="@drawable/box_background"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:paddingLeft="3dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/cpasstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_margin="3dp"
+            android:imeOptions="actionNext"
+            android:text="Confirm Password"
+            android:textColor="#b6b4fe"
+            android:textSize="25dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/confirmpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cpasstext"
+            android:layout_margin="3dp"
+            android:background="@drawable/box_background"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingLeft="3dp" />
+
+        <Button
+            android:id="@+id/registerbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirmpassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="7dp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</ScrollView>

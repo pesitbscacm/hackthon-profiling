@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="4dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:text="About"
+            android:textColor="#6d8afc"
+            android:textSize="29dp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading"
+            android:layout_margin="5dp"
+            android:text="The inGenius 2012 app is designed to be used as a companion app for the hackers at inGenius. Hackers can register and login from the app itself. Besides these simple pleasures of life, one can also check on the other hackers and their hacks."
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/credits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:layout_margin="5dp"
+            android:text="App developed by"
+            android:textColor="#6d8aec"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/radhika"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/credits"
+            android:layout_margin="5dp"
+            android:text="Radhika Bhanu"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/karan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radhika"
+            android:layout_margin="5dp"
+            android:text="Karan Rajpal"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/karan"
+            android:layout_margin="5dp"
+            android:text="With help from"
+            android:textColor="#6d8aec"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/prashanth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/c"
+            android:layout_margin="5dp"
+            android:text="Prashanth Joseph Babu"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prashanth"
+            android:layout_margin="5dp"
+            android:text="Ali Asgar"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+</ScrollView>
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:paddingBottom="4dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewSize" >
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:text="About"
+            android:textColor="#6d8afc"
+            android:textSize="29dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading"
+            android:layout_margin="5dp"
+            android:text="The inGenius 2012 app is designed to be used as a companion app for the hackers at inGenius. Hackers can register and login from the app itself. Besides these simple pleasures of life, one can also check on the other hackers and their hacks."
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/credits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:layout_margin="5dp"
+            android:text="App developed by"
+            android:textColor="#6d8aec"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/radhika"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/credits"
+            android:layout_margin="5dp"
+            android:text="Radhika Bhanu"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/karan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radhika"
+            android:layout_margin="5dp"
+            android:text="Karan Rajpal"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            tools:ignore="HardcodedText" />
+
+       
+
+    </RelativeLayout>
+
+</ScrollView>

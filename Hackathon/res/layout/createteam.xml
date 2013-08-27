@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/teamdetailstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team Details"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/teamnametext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/teamdetailstext"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="15dp"
+            android:text="Enter a team name :"
+            android:textColor="#b6b4fe"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nameedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teamnametext"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_margin="3dp"
+            android:background="@drawable/box_background" />
+
+        <TextView
+            android:id="@+id/teampasswordtext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/nameedittext"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="15dp"
+            android:text="Enter a team password :"
+            android:textColor="#b6b4fe"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/passwordedittext"
+            android:imeOptions="actionNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teampasswordtext"
+            android:singleLine="true"
+            android:layout_margin="3dp"
+            android:background="@drawable/box_background" />
+
+        <TextView
+            android:id="@+id/confirmpasswordtext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/passwordedittext"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="15dp"
+            android:text="Confirm password :"
+            android:textColor="#b6b4fe"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+       
+        
+        <EditText
+            android:id="@+id/confirmpasswordedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confirmpasswordtext"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_margin="3dp"
+            android:background="@drawable/box_background" />
+
+         <TextView
+            android:id="@+id/descript"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/confirmpasswordedittext"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="15dp"
+            android:text="Team Description"
+            android:textColor="#b6b4fe"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+         
+        <EditText
+            android:id="@+id/descriptionedittext"
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:layout_below="@+id/descript"
+            android:imeOptions="actionNext"
+            android:layout_margin="3dp"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:background="@drawable/big_box_bg"
+            />
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/descriptionedittext"
+            android:layout_marginTop="6dp"
+            android:text="NOTE:You wll automatically become the team leader."
+            android:textColor="#b6b4fe"
+            android:textSize="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/note"
+            android:id="@+id/updatepoo"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:text="UPDATE" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#000000"
+        android:gravity="center_vertical"
+        android:padding="2dp"
+        android:text="Choose an action"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/gallery_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@null"
+        android:drawableLeft="@drawable/gallery_2"
+        android:gravity="left|center_vertical"
+        android:text="Gallery" />
+
+    <View
+        android:id="@+id/line_break"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+   <!-- <Button
+        android:id="@+id/camera_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@null"
+        android:drawableLeft="@drawable/camera_2"
+        android:gravity="left|center_vertical"
+        android:text="Camera" />
+-->
+</LinearLayout>
